@@ -26,9 +26,9 @@
 //	THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "HPTextViewInternal.h"
 
 @class HPGrowingTextView;
-@class HPTextViewInternal;
 
 @protocol HPGrowingTextViewDelegate
 
@@ -76,7 +76,7 @@
 @property int maxNumberOfLines;
 @property int minNumberOfLines;
 @property BOOL animateHeightChange;
-@property (nonatomic, strong) UITextView *internalTextView;	
+@property (nonatomic, strong) HPTextViewInternal *internalTextView;
 
 
 //uitextview properties
